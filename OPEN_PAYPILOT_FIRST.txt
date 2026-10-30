@@ -1,0 +1,16 @@
+PAYPILOT OFFLINE PREVIEW
+
+To open PAYPILOT on Windows without installing Node.js or Python:
+1. Extract this ZIP completely.
+2. Open the extracted PAYPILOT folder.
+3. Double-click OPEN_PAYPILOT.html (or index.html).
+4. If Windows asks which app to use, choose Chrome or Edge.
+
+IMPORTANT:
+This is a browser-only offline demonstration. It has interactive sample screens,
+but does not connect to the Python backend, a real database, Claude, or PayPal.
+All amounts and transactions are fictional demo data.
+
+For cloud deployment, keep the frontend/ and backend/ source folders and use
+the Dockerfile and render.yaml. Do not use GitHub Pages to run the Python API.
+The frontend/index.html remains the Vite entry point for hosted builds.

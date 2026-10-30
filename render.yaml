@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: paypilot-app
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        value: sqlite:////var/data/paypilot.db
+      - key: PAYPAL_MODE
+        value: demo
+    disk:
+      name: paypilot-data
+      mountPath: /var/data
+      sizeGB: 1

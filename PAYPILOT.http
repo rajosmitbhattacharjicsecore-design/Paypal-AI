@@ -1,0 +1,16 @@
+@baseUrl = http://localhost:8000
+
+### Health
+GET {{baseUrl}}/api/health
+
+### Dashboard
+GET {{baseUrl}}/api/dashboard
+
+### Invoices
+GET {{baseUrl}}/api/invoices
+
+### Forecast
+GET {{baseUrl}}/api/forecast
+
+### Risks
+GET {{baseUrl}}/api/risks
